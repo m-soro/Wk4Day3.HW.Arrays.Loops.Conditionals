@@ -33,13 +33,19 @@ const plantee = ["Plantee", "plant", 5000, "Mordor"];
 const porgee = ["Porgee", "Porg", 186, "Ahch-To"];
 const dart = ["D'Art", "Demogorgan Dog", 2, "Upside Down"];
 
-plantee[2] = plantee[2] += 1;
-console.log(plantee[2]);
-wolfy[3] = "Gotham City";
-console.log(plantee[2]);
-dart.push("Hawkins");
-console.log(dart);
-// trying out the splice method
-wolfy.splice(0, 1);
-wolfy.splice(0, 0, "Gameboy");
-console.log(wolfy);
+// plantee[2] = plantee[2] += 1;
+// console.log(plantee[2]);
+// wolfy[3] = "Gotham City";
+// console.log(plantee[2]);
+// dart.push("Hawkins");
+// console.log(dart);
+// // trying out the splice method
+// wolfy.splice(0, 1);
+// wolfy.splice(0, 0, "Gameboy");
+// console.log(wolfy);
+
+const turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+for (let turtle of turtles) {
+  console.log(turtle.toUpperCase());
+}
