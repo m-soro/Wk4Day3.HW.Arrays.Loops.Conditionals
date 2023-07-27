@@ -125,3 +125,11 @@ console.log(`Does the array containes Eggbert? ${whereIsWaldo.includes("Eggbert"
 whereIsWaldo[1][2] = "No One";
 console.log(whereIsWaldo);
 console.log(whereIsWaldo[2][1][1]);
+
+console.log("\n======== EXCITED KITTEN ========\n");
+
+for (let i = 1; i <= 20; i++) {
+  i % 2 === 0
+    ? console.log("...human...why you taking pictures of me?...")
+    : console.log("Love me, pet me! HSSSSSS!");
+}
