@@ -128,9 +128,18 @@ console.log(whereIsWaldo[2][1][1]);
 
 console.log("\n======== EXCITED KITTEN ========\n");
 
+const catSaying = [
+  "...human...why you taking pictures of me?...",
+  "...the catnip made me do it...",
+  "...why does the red dot always get away...",
+];
+
+// const randomCatSayingIndex = Math.floor(Math.random() * catSaying.length);
+// console.log(catSaying[randomCatSayingIndex]);
+
 for (let i = 1; i <= 20; i++) {
   i % 2 === 0
-    ? console.log("...human...why you taking pictures of me?...")
+    ? console.log(catSaying[Math.floor(Math.random() * catSaying.length)])
     : console.log("Love me, pet me! HSSSSSS!");
 }
 
@@ -154,3 +163,73 @@ console.log(nums.sort());
 console.log(nums.length / 2);
 const midArray = Math.floor(nums.length / 2);
 console.log(nums[midArray]);
+
+console.log("\n======== HUNGRY FOR MORE? ========\n");
+
+// To be honest I just memmorized this fibonnaci recursion function.
+
+const fib = (n) => {
+  if (n === 1 || n === 2) {
+    return 1;
+  }
+  return fib(n - 1) + fib(n - 2);
+};
+
+console.log(fib(10));
+
+console.log("\n======== RETURN OF THE CLOSETS ========\n");
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "Per Scholas hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps",
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],
+  [
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs",
+  ],
+  [
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans",
+  ],
+];
+
+console.log("\n======== ALIEN ATTIRE ========\n");
+
+const kristynsShoe = kristynsCloset[kristynsCloset.indexOf("left shoe")];
+thomsCloset[2].push(kristynsShoe);
+console.log(thomsCloset[2]);
+
+console.log("\n======== DRESS US UP ========\n");
+
+const randNum = (array) => Math.floor(Math.random() * array.length);
+
+console.log(randNum(thomsCloset[2]));
+
+// console.log("\n======== THOM'S OUTFIT ========\n");
+
+// const selectOutfits = (person,array) => {
+//   let randomItemIndex = Math.floor(Math.random() * array.length);
+//   let item1 = array[randomItemIndex];
+//     let item2 =
+//   //   let item3 =
+//   //   return `${person} is looking dapper in his ${item1}, paired with ${item2} and finished it with ${item3}.`;
+// };
