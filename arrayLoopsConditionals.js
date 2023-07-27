@@ -133,3 +133,24 @@ for (let i = 1; i <= 20; i++) {
     ? console.log("...human...why you taking pictures of me?...")
     : console.log("Love me, pet me! HSSSSSS!");
 }
+
+console.log("\n======== FIND THE MEDIAN ========\n");
+
+/**
+ * ----------------
+ * FIND THE MEDIAN
+ * ----------------
+ * Arrange the data points from smallest to largest.
+ * If the number of data points is odd, the median is the middle data point in the list.
+ * If the number of data points is even, the median is the average of the two middle data
+ * points in the list.
+ */
+
+const nums = [
+  14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18, 12,
+  17, 12, 71, 18, 15, 12,
+];
+console.log(nums.sort());
+console.log(nums.length / 2);
+const midArray = Math.floor(nums.length / 2);
+console.log(nums[midArray]);
