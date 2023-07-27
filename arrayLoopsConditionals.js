@@ -1,29 +1,29 @@
 /**
  * Mark Soro
  * WK4 DAY 3 LAB Assignment/Lab
- * @link
+ * @link https://replit.com/@msoro/Wk4Day3-ArrayLoopsConditionals#index.js
  */
 
 console.log("\n======== PART II: JAVASCRIPT REPS ========\n");
 console.log("\n======== EASY GOING ========\n");
-// for (let i = 1; i <= 20; i++) {
-//   console.log(i);
-// }
+for (let i = 1; i <= 20; i++) {
+  console.log(i);
+}
 console.log("\n======== GET EVEN ========\n");
-// for (let i = 0; i <= 200; i += 2) {
-//   console.log(i);
-// }
+for (let i = 0; i <= 200; i += 2) {
+  console.log(i);
+}
 console.log("\n======== FIZZ BUZZ ========\n");
 
-// for (let i = 1; i <= 200; i++) {
-//   i % 3 === 0 && i % 5 == 0
-//     ? console.log(`FizzBuzz`)
-//     : i % 3 === 0
-//     ? console.log(`Fizz`)
-//     : i % 5 === 0
-//     ? console.log(`Buzz`)
-//     : console.log(i);
-// }
+for (let i = 1; i <= 200; i++) {
+  i % 3 === 0 && i % 5 == 0
+    ? console.log(`FizzBuzz`)
+    : i % 3 === 0
+    ? console.log(`Fizz`)
+    : i % 5 === 0
+    ? console.log(`Buzz`)
+    : console.log(i);
+}
 
 console.log("\n======== WILD WILD LIFE ========\n");
 
@@ -33,22 +33,22 @@ const plantee = ["Plantee", "plant", 5000, "Mordor"];
 const porgee = ["Porgee", "Porg", 186, "Ahch-To"];
 const dart = ["D'Art", "Demogorgan Dog", 2, "Upside Down"];
 
-// plantee[2] = plantee[2] += 1;
-// console.log(plantee[2]);
-// wolfy[3] = "Gotham City";
-// console.log(plantee[2]);
-// dart.push("Hawkins");
-// console.log(dart);
-// // trying out the splice method
-// wolfy.splice(0, 1);
-// wolfy.splice(0, 0, "Gameboy");
-// console.log(wolfy);
+plantee[2] = plantee[2] += 1;
+console.log(plantee[2]);
+wolfy[3] = "Gotham City";
+console.log(plantee[2]);
+dart.push("Hawkins");
+console.log(dart);
+// trying out the splice method
+wolfy.splice(0, 1);
+wolfy.splice(0, 0, "Gameboy");
+console.log(wolfy);
 
 const turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
-// for (let turtle of turtles) {
-//   console.log(turtle.toUpperCase());
-// }
+for (let turtle of turtles) {
+  console.log(turtle.toUpperCase());
+}
 
 const favMovies = [
   "Jaws",
@@ -95,7 +95,7 @@ console.log(favMovies.shift()); // removes and returns the first element
 // .unshift() method adds the specified elements to the beginning of an array and returns the new length of the array
 // I did not specify what to add so it should just log the length of the array. Just like .length
 console.log(favMovies.unshift());
-// console.log(favMovies);
+console.log(favMovies);
 
 // console.log(favMovies.indexOf("Django Unchained")); // this returns the index of django
 // .splice mutates the original arry permanently it can remove, replace and add element to an array
@@ -104,7 +104,7 @@ console.log(favMovies);
 
 // slice returns a copy of the arry. it doesnt mutate the array
 // it returns a copy of the operated array
-//console.log(favMovies.length / 2); // this is the middle of the array
+console.log(favMovies.length / 2); // this is the middle of the array
 const halfArray = favMovies.slice(favMovies.length / 2);
 console.log(halfArray);
 console.log(favMovies.indexOf("Fast and Furious")); // it returns negative one
