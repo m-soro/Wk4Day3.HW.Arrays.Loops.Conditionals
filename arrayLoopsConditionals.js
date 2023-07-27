@@ -242,3 +242,25 @@ const kristinOutfits = () => {
 kristinOutfits();
 kristinOutfits();
 kristinOutfits();
+
+console.log("\n======== DIRTY LAUNDRY ========\n");
+
+const washLaundry = (array) => {
+  array.forEach((element) => {
+    console.log(`WHIRR: Now washing ${element}`);
+  });
+};
+
+washLaundry(kristynsCloset);
+
+console.log("\n======== INVENTORY ========\n");
+
+const inventory = (array) => {
+  array.forEach((elementArray) => {
+    elementArray.forEach((element, index) => {
+      console.log(`Item: ${element}, is index of: ${index}`);
+    });
+  });
+};
+
+inventory(thomsCloset);
