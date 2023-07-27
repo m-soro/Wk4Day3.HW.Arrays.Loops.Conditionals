@@ -134,9 +134,6 @@ const catSaying = [
   "...why does the red dot always get away...",
 ];
 
-// const randomCatSayingIndex = Math.floor(Math.random() * catSaying.length);
-// console.log(catSaying[randomCatSayingIndex]);
-
 for (let i = 1; i <= 20; i++) {
   i % 2 === 0
     ? console.log(catSaying[Math.floor(Math.random() * catSaying.length)])
@@ -220,16 +217,28 @@ console.log(thomsCloset[2]);
 
 console.log("\n======== DRESS US UP ========\n");
 
-const randNum = (array) => Math.floor(Math.random() * array.length);
+console.log("\n======== THOM'S OUTFIT ========\n");
 
-console.log(randNum(thomsCloset[2]));
+const selectOutfits = (person, array1, array2, array3) => {
+  let item1 = array1[Math.floor(Math.random() * array1.length)];
+  let item2 = array2[Math.floor(Math.random() * array2.length)];
+  let item3 = array3[Math.floor(Math.random() * array3.length)];
+  console.log(
+    `${person} is looking dapper in his ${item1}, paired with ${item2} and finished it with ${item3}.`
+  );
+};
+selectOutfits("Thom", thomsCloset[0], thomsCloset[1], thomsCloset[2]);
+selectOutfits("Thom", thomsCloset[0], thomsCloset[1], thomsCloset[2]);
+selectOutfits("Thom", thomsCloset[0], thomsCloset[1], thomsCloset[2]);
 
-// console.log("\n======== THOM'S OUTFIT ========\n");
+console.log("\n======== KRISTINS OUTFITS ========\n");
 
-// const selectOutfits = (person,array) => {
-//   let randomItemIndex = Math.floor(Math.random() * array.length);
-//   let item1 = array[randomItemIndex];
-//     let item2 =
-//   //   let item3 =
-//   //   return `${person} is looking dapper in his ${item1}, paired with ${item2} and finished it with ${item3}.`;
-// };
+const kristinOutfits = () => {
+  let item1 = kristynsCloset[Math.floor(Math.random() * kristynsCloset.length)];
+  let item2 = kristynsCloset[Math.floor(Math.random() * kristynsCloset.length)];
+  let item3 = kristynsCloset[Math.floor(Math.random() * kristynsCloset.length)];
+  console.log(`Kristin is looking fab in ${item1}, ${item2}, ${item3}`);
+};
+kristinOutfits();
+kristinOutfits();
+kristinOutfits();
